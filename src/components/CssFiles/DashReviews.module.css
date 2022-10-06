@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: 'center';
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .box {
+    position: relative;
+    width: 3.1rem;
+    height: 2.5rem;
+}
+
+.container .boxText {
+  position: relative;
+
+}
+
+
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.imgBox img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+  resize: both;
+  border-radius: 50px;
+
+}

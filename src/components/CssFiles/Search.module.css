@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: 'center';
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .box {
+    position: relative;
+    width: 15.5rem;
+    height: 11.5rem;
+}
+
+/* .container .box:hover .imgBox {
+  transform: translate(-1.2rem, -1.5rem);
+} */
+
+.container .box:hover .content {
+  transform: translate(2rem, 2.8rem);
+}
+
+.imgBox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.imgBox img {
+  width: 16.5rem;
+  height: 11.5rem;
+  object-fit: cover;
+  resize: both;
+}
+
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.3rem;
+  display: flex;
+  background-color: black;
+  color: white;
+  z-index: 1;
+  align-items: flex-end;
+  transition: 0.5s ease-in-out;
+}
+
+.lowerContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16.5rem;
+    height: 14.5rem;
+    padding: 0.3rem;
+    display: flex;
+    border: 0px solid black;
+    background-color: white;
+    color: black;
+    z-index: 1;
+    align-items: flex-end;
+    transition: 0.5s ease-in-out;
+  }
+
+  .lowerContent:hover {
+    display: none;
+}
+
+@media (max-width: 600px) {
+  .container .box {
+    width: 8.5rem;
+    height: 6rem;
+}
+
+.content {
+  width: 100%;
+  height: 64%;
+}
+
+  .imgBox img {
+    width: 8.5rem;
+    height: 6rem;
+  }
+
+  .lowerContent {
+    width: 8.5rem;
+    height: 8.3rem;
+  }
+
+
+  .container .box:hover .content {
+    transform: translate(0, 1rem);
+  }
+  .container .box:hover .imgBox {
+    transform: translate(0, -1rem);
+  }
+  .container .box {
+    width: 16.5rem;
+    height: 11.5rem;
+}
+
+}
+
