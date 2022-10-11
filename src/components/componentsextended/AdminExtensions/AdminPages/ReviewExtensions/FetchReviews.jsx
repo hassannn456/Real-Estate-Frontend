@@ -1,4 +1,4 @@
-import data from '../../../HomeExtensions/ReviewsExtension/DummyReviews'
+import data from '../../../HomeExtensions/ReviewsExtension/ApiReviews'
 import React, { useState } from 'react'
 import { Box, Pagination, styled } from "@mui/material";
 import ResultsReviews from './ResultsReviews';

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, styled } from "@mui/material";
-import data from '../../../HomeExtensions/ReviewsExtension/DummyReviews'
+import data from '../../../HomeExtensions/ReviewsExtension/ApiReviews'
 import DashReview from './DashReviews';
 
 const StyledParentBox = styled(Box)({

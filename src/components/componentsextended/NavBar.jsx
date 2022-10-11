@@ -11,8 +11,9 @@ import DomainIcon from "@mui/icons-material/Domain";
 import styled from "@emotion/styled";
 import Drawers from "./Drawers";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useEffect } from "react";
+import { AuthContext } from "./LoginExtensions/auth-context";
 
 const StyledTab = styled(Tab)(({ theme }) => ({
   color: "#dbc895",
@@ -38,6 +39,8 @@ const Styledlogin = styled(Button)({
 });
 
 const NavBar = () => {
+  const auth = useContext(AuthContext);
+
   const [value, setValue] = useState("0");
 
   useEffect(() => {
@@ -116,9 +119,9 @@ const NavBar = () => {
         </Tabs>
 
         <Box sx={{ display: { xs: "none", sm: "block" } }}>
-          <Link style={{ textDecoration: "none" }} to="/login">
+        {!auth.isLoggedIn &&  <Link style={{ textDecoration: "none" }} to="/login">
             <Styledlogin>Login</Styledlogin>
-          </Link>
+          </Link>}
         </Box>
       </StyledToolbar>
     </AppBar>

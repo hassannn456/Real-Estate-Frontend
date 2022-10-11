@@ -11,7 +11,7 @@ import "../../../CssFiles/Home.css";
 // import required modules
 import { Autoplay, Pagination, FreeMode } from "swiper";
 import { Box, styled } from "@mui/material";
-import data from './DummyReviews'
+import data from './ApiReviews'
 import ReviewResults from './ReviewResults';
 
 
